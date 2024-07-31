@@ -2,8 +2,8 @@ import pygame
 import os
 
 def load_image_with_path(file_name, scale_factor=1):
-    # Ajuste o caminho para a pasta assents/images
-    file_path = os.path.join('assents', 'images', file_name)
+    # Ajuste o caminho para a pasta assets/images
+    file_path = os.path.join('assets', 'images', file_name)
     
     try:
         image = pygame.image.load(file_path)

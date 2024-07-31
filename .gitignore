@@ -1,0 +1,42 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment directory
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Pygame specific cache
+pygame_cache/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Other temporary files
+*.tmp
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.orig
+*.rej

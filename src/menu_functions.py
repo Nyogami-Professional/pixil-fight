@@ -9,19 +9,19 @@ print(f"Diretório base: {base_dir}")
 
 def show_menu(screen, font, options):
     # Ajuste o caminho para a imagem do menu
-    hub_image_path = os.path.join(base_dir, '..', 'assents', 'images', 'Hub_image.png')
+    hub_image_path = os.path.join(base_dir, '..', 'assets', 'images', 'Hub_image.png')
     hub_image = pygame.image.load(hub_image_path)
     hub_image = pygame.transform.scale(hub_image, (WIDTH, HEIGHT))
 
     # Tocar a música do hub
     audio.stop_music()
-    hub_music_path = os.path.join(base_dir, '..', 'assents', 'music', 'Hub_Music.mp3')
+    hub_music_path = os.path.join(base_dir, '..', 'assets', 'music', 'Hub_Music.mp3')
     audio.load_music(hub_music_path)
     audio.play_music(loop=True)
 
     # Criar botões
     start_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 - 25, 100, 50)
-    settings_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 + 35, 100, 50)
+    settings_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 + 35, 170, 50)
     exit_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 + 105, 100, 50)
     
     while True:
