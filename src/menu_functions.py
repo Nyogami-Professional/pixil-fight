@@ -15,7 +15,7 @@ def show_menu(screen, font, options):
 
     # Tocar a música do hub
     audio.stop_music()
-    hub_music_path = os.path.join(base_dir, '..', 'assets', 'music', 'Hub_Music.mp3')
+    hub_music_path = os.path.join(base_dir, '..', 'assets', 'sounds', 'Hub_Music.mp3')
     audio.load_music(hub_music_path)
     audio.play_music(loop=True)
 

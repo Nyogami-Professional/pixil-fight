@@ -30,7 +30,7 @@ player2_jump_images = [load_image_with_path(f'player2_jump{i}.png', scale_factor
 
 def start_game():
     # Troca a música para a música de luta
-    music_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'music', 'Fight_Music.mp3')
+    music_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'sounds', 'Fight_Music.mp3')
     load_music(music_path)
     play_music(loop=True)
     ...
