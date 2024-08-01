@@ -4,11 +4,11 @@ def handle_input_player1(player1):
     keys = pygame.key.get_pressed()
     
     if keys[pygame.K_a]:
-        player1.x -= 5
+        player1.rect.x -= player1.speed
         player1.is_running = True
         player1.facing_right = False
     elif keys[pygame.K_d]:
-        player1.x += 5
+        player1.rect.x += player1.speed
         player1.is_running = True
         player1.facing_right = True
     else:
@@ -21,11 +21,11 @@ def handle_input_player2(player2):
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_LEFT]:
-        player2.x -= 5
+        player2.rect.x -= player2.speed
         player2.is_running = True
         player2.facing_right = False
     elif keys[pygame.K_RIGHT]:
-        player2.x += 5
+        player2.rect.x += player2.speed
         player2.is_running = True
         player2.facing_right = True
     else:

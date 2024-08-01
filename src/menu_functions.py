@@ -17,12 +17,14 @@ def show_menu(screen, font, options):
     audio.stop_music()
     hub_music_path = os.path.join(base_dir, '..', 'assents', 'music', 'Hub_Music.mp3')
     audio.load_music(hub_music_path)
-    audio.play_music(loop=True)
+    audio.play_music(hub_music_path, loop=True)
 
     # Criar botões
-    start_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 - 25, 100, 50)
-    settings_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 + 35, 100, 50)
-    exit_button = pygame.Rect(WIDTH / 2 - 50, HEIGHT / 2 + 105, 100, 50)
+    button_width = 200
+    button_height = 50
+    start_button = pygame.Rect(WIDTH / 2 - button_width / 2, HEIGHT / 2 - button_height / 2 - 40, button_width, button_height)
+    settings_button = pygame.Rect(WIDTH / 2 - button_width / 2, HEIGHT / 2 - button_height / 2 + 40, button_width, button_height)
+    exit_button = pygame.Rect(WIDTH / 2 - button_width / 2, HEIGHT / 2 - button_height / 2 + 120, button_width, button_height)
     
     while True:
         screen.blit(hub_image, (0, 0))
@@ -31,9 +33,9 @@ def show_menu(screen, font, options):
         pygame.draw.rect(screen, (0, 128, 0), settings_button)
         pygame.draw.rect(screen, (128, 0, 0), exit_button)
 
-        start_text = font.render('Start', True, BLACK)
+        start_text = font.render('Start Game', True, BLACK)
         settings_text = font.render('Settings', True, BLACK)
-        exit_text = font.render('Exit', True, BLACK)
+        exit_text = font.render('Quit', True, BLACK)
 
         screen.blit(start_text, (start_button.x + 10, start_button.y + 10))
         screen.blit(settings_text, (settings_button.x + 10, settings_button.y + 10))
