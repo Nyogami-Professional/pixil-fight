@@ -2,7 +2,7 @@ import os
 import pygame
 import sys
 import audio
-from src.config import WIDTH, HEIGHT, BLACK
+from config import WIDTH, HEIGHT, BLACK
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 print(f"Diretório base: {base_dir}")

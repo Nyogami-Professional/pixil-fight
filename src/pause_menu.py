@@ -1,6 +1,6 @@
 import pygame
 import sys  # Adicione esta linha para importar o módulo sys
-from src.config import WIDTH, HEIGHT, BLACK
+from config import WIDTH, HEIGHT, BLACK
 
 def show_pause_menu(screen, font):
     # Criar botões

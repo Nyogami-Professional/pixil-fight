@@ -1,5 +1,5 @@
 import pygame
-from src.config import WIDTH, HEIGHT, BLACK
+from config import WIDTH, HEIGHT, BLACK
 import sys
 
 def show_settings_menu(screen, font):
